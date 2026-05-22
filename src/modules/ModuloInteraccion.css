@@ -1,0 +1,193 @@
+.interact-concept__heading {
+  font-family: var(--font-title);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+.interact-concept__intro {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-4);
+}
+
+.interact-concept__list {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.interact-concept__item {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.interact-concept__item-title {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.interact-concept__item-text {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.interact-concept__note {
+  margin-top: var(--space-4);
+}
+
+.interact-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.interact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.interact-steps {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+.interact-step {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+}
+.interact-step--active {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary);
+}
+.interact-step__num {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  font-weight: var(--weight-bold);
+}
+.interact-step__title {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.interact-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.interact-progress__bar {
+  width: 160px;
+  height: 8px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+.interact-progress__fill {
+  height: 100%;
+  background: var(--color-primary);
+  width: 0%;
+  transition: width var(--transition-base);
+}
+.interact-progress__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.interact-panel {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-card);
+}
+.interact-panel__title {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-title);
+  font-size: var(--text-md);
+}
+.interact-panel__desc {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.interact-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .interact-header { flex-direction: column; align-items: stretch }
+  .interact-progress__bar { width: 100% }
+  .interact-actions { justify-content: space-between }
+}
+
+/* ── Animaciones ligeras para transición entre pasos ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.interact-panel__title,
+.interact-panel__desc {
+  will-change: opacity, transform;
+  animation-duration: 260ms;
+  animation-timing-function: cubic-bezier(0.2,0.8,0.2,1);
+  animation-fill-mode: both;
+}
+.interact-panel__title {
+  animation-name: fadeInUp;
+}
+.interact-panel__desc {
+  animation-name: slideIn;
+  animation-delay: 60ms;
+}
+
+.interact-step {
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  will-change: transform, background-color;
+}
+.interact-step--active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.interact-progress__fill {
+  will-change: width;
+}
+
+/* Prefer reduced motion: disable animations for users who opted out */
+@media (prefers-reduced-motion: reduce) {
+  .interact-panel__title,
+  .interact-panel__desc,
+  .interact-step,
+  .interact-progress__fill {
+    animation: none !important;
+    transition: none !important;
+  }
+}

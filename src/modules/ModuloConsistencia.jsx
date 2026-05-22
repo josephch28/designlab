@@ -67,7 +67,7 @@ function ExerciseCards({ showDifferences, onReveal }) {
             <h4 className="consistency-card__title" style={{ fontFamily: 'Georgia, serif' }}>
               Oferta especial — inconsistente
             </h4>
-            <p className="consistency-card__text" style={{ color: '#8a2be2' }}>
+            <p className="consistency-card__text">
               Tipografías mezcladas, colores que no respetan la paleta, y espaciados
               irregulares que confunden la jerarquía.
             </p>

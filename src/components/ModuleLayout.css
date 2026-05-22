@@ -1,0 +1,106 @@
+/* ── Encabezado ── */
+.module__header {
+  background-color: var(--color-primary-light);
+  padding: var(--space-12) 0;
+}
+
+.module__header-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.module__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-family: var(--font-title);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  line-height: 1;
+}
+
+.module__icon {
+  flex-shrink: 0;
+  font-size: 28px;
+  color: var(--color-primary);
+}
+
+.module__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.module__title {
+  font-family: var(--font-title);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  line-height: var(--leading-tight);
+}
+
+.module__description {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
+
+/* ── Cuerpo de dos columnas ── */
+.module__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  padding: var(--space-10) 0;
+}
+
+/* ── Paneles ── */
+.module__panel {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-sm);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.module__panel:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.module__panel--exercise {
+  box-shadow: var(--shadow-md);
+  border-top: 3px solid var(--color-primary);
+}
+
+.module__panel-label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-4);
+}
+
+/* ── Separador ── */
+.module__divider {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 0;
+  width: 100%;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .module__body {
+    grid-template-columns: 1fr;
+  }
+}

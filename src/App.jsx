@@ -27,14 +27,10 @@ export default function App() {
         <Hero />
         <ModuloTipografia />
         <ModuloColor />
-        {/* Pandy — ModuloIconografia */}
         <IconografiaModule />
-        {/* Pandy — ModuloEstados */}
+        <EstadosModule />
         <ModuloConsistencia />
         <ModuloInteraccion />
-        <EstadosModule />
-        {/* Jota — ModuloConsistencia */}
-        {/* Jota — ModuloInteraccion */}
       </main>
       <Footer />
     </>

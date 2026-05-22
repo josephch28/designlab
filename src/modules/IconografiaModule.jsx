@@ -8,7 +8,10 @@ import {
   IconSettings,
   IconHome,
   IconBell,
-  IconUser
+  IconUser,
+  IconGridDots,
+  IconVectorTriangle,
+  IconRulerMeasure
 } from '@tabler/icons-react';
 import './IconografiaModule.css';
 
@@ -103,7 +106,11 @@ export default function IconografiaModule() {
         al usuario a predecir acciones de forma rápida y visual.
       </p>
       <figure className="iconografia-figura">
-        <div className="iconografia-placeholder"></div>
+        <div className="iconografia-placeholder">
+          <IconGridDots size={48} stroke={1.2} />
+          <IconVectorTriangle size={48} stroke={1.2} />
+          <IconRulerMeasure size={48} stroke={1.2} />
+        </div>
         <figcaption>Diseñando con precisión geométrica</figcaption>
       </figure>
     </div>

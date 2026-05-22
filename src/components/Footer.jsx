@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="footer__col footer__col--right">
           <a
             className="footer__repo-link"
-            href="https://github.com/TU_USUARIO/designlab"
+            href="https://github.com/josephch28/designlab"
             target="_blank"
             rel="noreferrer"
           >

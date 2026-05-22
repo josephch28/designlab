@@ -8,7 +8,7 @@ export default function Hero() {
   }
 
   const openGitHub = () => {
-    window.open('https://github.com/TU_USUARIO/designlab', '_blank')
+    window.open('https://github.com/josephch28/designlab', '_blank')
   }
 
   return (

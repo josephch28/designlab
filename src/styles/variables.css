@@ -1,0 +1,116 @@
+:root {
+  /* ── Colores primarios ── */
+  --color-primary: #6366F1;
+  --color-primary-hover: #4F46E5;
+  --color-primary-light: #EEF2FF;
+
+  /* ── Colores secundarios ── */
+  --color-secondary: #06B6D4;
+  --color-secondary-light: #ECFEFF;
+
+  /* ── Colores semánticos ── */
+  --color-success: #22C55E;
+  --color-success-light: #DCFCE7;
+  --color-error: #EF4444;
+  --color-error-light: #FEE2E2;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FEF3C7;
+
+  /* ── Fondos ── */
+  --color-bg: #F8FAFC;
+  --color-bg-secondary: #F1F5F9;
+  --color-bg-card: #FFFFFF;
+  --color-bg-dark: #0F172A;
+
+  /* ── Texto ── */
+  --color-text: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+
+  /* ── Bordes ── */
+  --color-border: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+
+  /* ── Tipografía: familias ── */
+  --font-title: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  /* ── Tipografía: escala ── */
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-md: 17px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 42px;
+  --text-4xl: 56px;
+
+  /* ── Tipografía: pesos ── */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  /* ── Tipografía: interlineado ── */
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* ── Espaciado (múltiplos de 4px) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ── Bordes: radios ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ── Sombras ── */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.10), 0 4px 8px rgba(15, 23, 42, 0.06);
+
+  /* ── Transiciones ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ── Layout ── */
+  --max-width: 1200px;
+  --header-height: 64px;
+}
+
+/* ── Modo oscuro ── */
+body.dark {
+  --color-bg: #0B1120;
+  --color-bg-secondary: #111827;
+  --color-bg-card: #1E293B;
+  --color-border: #1E293B;
+  --color-border-strong: #334155;
+  --color-text: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #475569;
+  --color-primary-light: #1E1B4B;
+  --color-secondary-light: #0C2A30;
+  --color-success-light: #052E16;
+  --color-error-light: #2D0A0A;
+  --color-warning-light: #2D1D03;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}

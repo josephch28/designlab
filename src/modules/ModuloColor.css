@@ -1,0 +1,172 @@
+/* ── Panel concepto ── */
+.color-concept__heading {
+  font-family: var(--font-title);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.color-concept__intro,
+.color-concept__wcag {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-4);
+}
+
+.color-concept__note {
+  margin-top: var(--space-6);
+}
+
+/* ── Tabla WCAG ── */
+.color-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-2);
+}
+
+.color-table__cell {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  text-align: left;
+}
+
+.color-table__cell--header {
+  background-color: var(--color-bg-secondary);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.color-table tbody tr:last-child .color-table__cell {
+  border-bottom: none;
+}
+
+/* ── Panel ejercicio ── */
+.color-exercise {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* ── Selectores de color ── */
+.color-pickers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.color-picker__label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.color-picker__input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  padding: 0;
+  background: none;
+}
+
+.color-picker__input::-webkit-color-swatch-wrapper {
+  padding: 4px;
+}
+
+.color-picker__input::-webkit-color-swatch {
+  border: none;
+  border-radius: calc(var(--radius-md) - 4px);
+}
+
+.color-picker__input::-moz-color-swatch {
+  border: none;
+  border-radius: calc(var(--radius-md) - 4px);
+}
+
+.color-picker__hex {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* ── Previsualización ── */
+.color-preview {
+  min-height: 100px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  text-align: center;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* ── Ratio ── */
+.color-ratio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.color-ratio__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.color-ratio__value {
+  font-family: var(--font-title);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-tight);
+  transition: color var(--transition-base);
+}
+
+/* ── Badge WCAG ── */
+.color-wcag {
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Botones de ejemplo ── */
+.color-examples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.color-examples__btn {
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.color-examples__btn:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}

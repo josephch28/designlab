@@ -1,0 +1,203 @@
+.iconografia-concepto {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.iconografia-titulo {
+  font-family: var(--font-title);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.iconografia-texto {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.iconografia-figura {
+  margin: var(--space-4) 0 0 0;
+}
+
+.iconografia-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
+}
+
+.iconografia-figura figcaption {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.iconografia-ejercicio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  background-color: var(--color-bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.iconografia-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.iconografia-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border-strong);
+  background-color: var(--color-bg);
+  transition: var(--transition-base);
+}
+
+.iconografia-item--correct {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+}
+
+.iconografia-item--incorrect {
+  border-color: var(--color-error);
+  background-color: var(--color-error-light);
+}
+
+.iconografia-icon-wrapper {
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconografia-icon-wrapper svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5;
+}
+
+.iconografia-input {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  text-align: center;
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  transition: var(--transition-fast);
+}
+
+.iconografia-input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-color: transparent;
+}
+
+.iconografia-input:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-text-secondary);
+  font-weight: var(--weight-medium);
+}
+
+.iconografia-btn-primary {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-base);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.iconografia-btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.iconografia-btn-primary:active {
+  transform: translateY(0);
+}
+
+.iconografia-resultados {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.iconografia-puntaje {
+  text-align: center;
+}
+
+.iconografia-puntaje-texto {
+  font-family: var(--font-title);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.iconografia-puntaje-motiva {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.iconografia-btn-secondary {
+  padding: var(--space-2) var(--space-6);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-base);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.iconografia-btn-secondary:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
+/* Accesibilidad */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive básico para la cuadrícula */
+@media (max-width: 768px) {
+  .iconografia-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,3 +1,8 @@
+/* ── Scroll anclaje ── */
+.module {
+  scroll-margin-top: var(--header-height);
+}
+
 /* ── Encabezado ── */
 .module__header {
   background-color: var(--color-primary-light);

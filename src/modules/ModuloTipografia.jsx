@@ -161,7 +161,7 @@ export default function ModuloTipografia() {
       icon="ti-typography"
       title="Tipografía"
       description="Aprende cómo la tipografía guía la atención del usuario en una interfaz"
-      moduleNumber={1}
+      moduleNumber="01"
       concept={concept}
       exercise={<EjercicioTipografia />}
     />

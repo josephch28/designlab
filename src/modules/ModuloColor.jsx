@@ -153,7 +153,7 @@ export default function ModuloColor() {
       icon="ti-palette"
       title="Color"
       description="Entiende el contraste, la accesibilidad y el estándar WCAG"
-      moduleNumber={2}
+      moduleNumber="02"
       concept={concept}
       exercise={<EjercicioColor />}
     />

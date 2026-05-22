@@ -122,7 +122,7 @@ export default function ModuloConsistencia() {
       icon="ti-ruler"
       title="Consistencia visual"
       description="Muestra comparativa: diseño inconsistente vs consistente"
-      moduleNumber={3}
+      moduleNumber="05"
       concept={concept}
       exercise={
         <ExerciseCards

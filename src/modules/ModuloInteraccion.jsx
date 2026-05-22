@@ -87,7 +87,7 @@ export default function ModuloInteraccion() {
       icon="ti-cursor-click"
       title="Diseño de interacción"
       description="Flujo básico: Inicio → Acción → Confirmación"
-      moduleNumber={4}
+      moduleNumber="06"
       concept={concept}
       exercise={<FlowSteps />}
     />

@@ -1,0 +1,196 @@
+/* ── Panel concepto ── */
+.tipo-concept__heading {
+  font-family: var(--font-title);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.tipo-concept__intro {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-6);
+}
+
+/* ── Escala tipográfica ── */
+.tipo-scale__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tipo-scale__row:last-child {
+  border-bottom: none;
+}
+
+.tipo-scale__text {
+  color: var(--color-text);
+  font-family: var(--font-title);
+}
+
+.tipo-scale__text--muted {
+  color: var(--color-text-muted);
+}
+
+.tipo-scale__meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  margin-left: var(--space-4);
+}
+
+/* ── Nota final ── */
+.tipo-concept__note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.tipo-concept__note .ti {
+  color: var(--color-secondary);
+  font-size: var(--text-md);
+  flex-shrink: 0;
+}
+
+/* ── Panel ejercicio ── */
+.tipo-exercise {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.tipo-exercise__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.tipo-exercise__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.tipo-exercise__value {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+}
+
+/* ── Select ── */
+.tipo-exercise__select {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.tipo-exercise__select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* ── Range ── */
+.tipo-exercise__range {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-border);
+  cursor: pointer;
+}
+
+.tipo-exercise__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.tipo-exercise__range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.tipo-exercise__range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+}
+
+/* ── Botones de peso ── */
+.tipo-exercise__weights {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.tipo-exercise__weight-btn {
+  padding: var(--space-2) var(--space-4);
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.tipo-exercise__weight-btn--active {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.tipo-exercise__weight-btn:not(.tipo-exercise__weight-btn--active):hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+/* ── Párrafo de muestra ── */
+.tipo-exercise__preview {
+  margin-top: var(--space-4);
+  padding: var(--space-6);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+  transition: font-family 300ms ease, font-size 300ms ease, font-weight 300ms ease;
+}
+
+/* ── Legibilidad ── */
+.tipo-exercise__legibility {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.tipo-exercise__legibility-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}

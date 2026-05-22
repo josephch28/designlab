@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 
 import ModuloTipografia from './modules/ModuloTipografia'
 import ModuloColor from './modules/ModuloColor'
+import IconografiaModule from './modules/IconografiaModule'
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -24,6 +25,7 @@ export default function App() {
         <ModuloTipografia />
         <ModuloColor />
         {/* Pandy — ModuloIconografia */}
+        <IconografiaModule />
         {/* Pandy — ModuloEstados */}
         {/* Jota — ModuloConsistencia */}
         {/* Jota — ModuloInteraccion */}

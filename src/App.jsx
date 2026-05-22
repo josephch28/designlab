@@ -10,6 +10,8 @@ import ModuloTipografia from './modules/ModuloTipografia'
 import ModuloColor from './modules/ModuloColor'
 import ModuloConsistencia from './modules/ModuloConsistencia'
 import ModuloInteraccion from './modules/ModuloInteraccion'
+import IconografiaModule from './modules/IconografiaModule'
+import EstadosModule from './modules/EstadosModule'
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -26,9 +28,12 @@ export default function App() {
         <ModuloTipografia />
         <ModuloColor />
         {/* Pandy — ModuloIconografia */}
+        <IconografiaModule />
         {/* Pandy — ModuloEstados */}
         <ModuloConsistencia />
         <ModuloInteraccion />
+        <EstadosModule />
+        {/* Jota — ModuloConsistencia */}
         {/* Jota — ModuloInteraccion */}
       </main>
       <Footer />
